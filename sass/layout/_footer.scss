@@ -1,0 +1,52 @@
+.footer {
+  background-color: #2f303a;
+
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__addres {
+    font-style: inherit;
+
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+
+  &__list-adres:not(:last-child) {
+    margin-top: 9px;
+  }
+
+  &__link {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-communication-text-color);
+    transition: color var(--time) var(--cubic-bezier);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.header {
+  &__logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-text-color);
+  }
+
+  &__logo--white {
+    color: var(--footer-adress-text-color);
+  }
+}
