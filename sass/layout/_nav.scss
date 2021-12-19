@@ -1,5 +1,15 @@
 .nav {
-  margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: block;
+  margin-left: 88px;
+  margin-right: 84px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-right: 84px;
+  }
+
   &__list {
     display: flex;
     align-items: center;
