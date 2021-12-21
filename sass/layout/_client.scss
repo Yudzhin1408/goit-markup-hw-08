@@ -1,20 +1,37 @@
 .client {
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
     display: flex;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__items {
+    
+    @media screen and (max-width: 1199px) {
+      margin: 15px;
+    }
     & + & {
-      margin-left: 30px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+      }
     }
   }
 
