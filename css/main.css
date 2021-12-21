@@ -248,6 +248,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
   height: auto;
   border-bottom: 1px solid #ececec;
@@ -603,10 +609,15 @@ body {
   font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .team__list {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 24px;
 }
 
 .team__item {
@@ -616,7 +627,7 @@ body {
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__people {
