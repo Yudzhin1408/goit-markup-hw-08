@@ -1,6 +1,18 @@
 .footer-social {
-  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    width: 369px;
+    margin-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
+    margin-top: -5px;
+    margin-left: 70px;
+  }
 
+  &__list.social {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
   &__text {
     line-height: 1.14;
     letter-spacing: 0.03em;

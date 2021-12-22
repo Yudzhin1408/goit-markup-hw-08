@@ -1,9 +1,9 @@
 .social {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
   &__item {
-    margin-top: 16px;
-    margin-bottom: 30px;
     width: 44px;
     height: 44px;
     & + & {
