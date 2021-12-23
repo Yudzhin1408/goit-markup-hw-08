@@ -1,14 +1,18 @@
 .features {
-  margin-bottom: -60px;
+  @media screen and (min-width: 768px) {
+  }
 
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin: -15px;
     }
   }
-
+  &__items {
+    margin: 15px;
+  }
   &__box-icon {
     display: flex;
     justify-content: center;
@@ -16,10 +20,6 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: #f5f4fa;
-
-    @media screen and (min-width: 768px) {
-      margin-right: 30px;
-    }
   }
 
   &__icon {
@@ -32,8 +32,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    text-align: center;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
   }
 
   &__text {
@@ -41,7 +44,6 @@
     letter-spacing: 0.03em;
     color: var(--desc-text-color);
     width: auto;
-    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
       width: 354px;
