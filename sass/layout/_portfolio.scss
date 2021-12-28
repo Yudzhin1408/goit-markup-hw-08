@@ -1,10 +1,23 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+
   margin: -15px;
 
   &__item {
     margin: 15px;
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
+
     transition: box-shadow var(--time) var(--cubic-bezier);
     &:hover,
     &:focus {
@@ -13,8 +26,14 @@
     }
   }
 
-  &__link:hover .portfolio__text {
-    transform: translateY(0);
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &:hover .portfolio__text {
+      transform: translateY(0);
+    }
   }
 
   &__box {
@@ -31,19 +50,27 @@
     color: #ffffff;
     background: rgba(33, 150, 243, 0.9);
     height: 100%;
-    width: 100%;
+    // width: 100%;
     top: 0;
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform var(--time) var(--cubic-bezier);
+    width: 450px;
+    // @media screen and (min-width: 768px) {
+    //   width: auto;
+    // }
   }
 
   &__dorder {
+    flex-grow: 1;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     padding: 20px 24px;
   }
+  // &__dorder :not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 
   &__items {
     font-weight: 700;
