@@ -262,6 +262,8 @@ body {
   display: block;
   margin-left: auto;
   margin-bottom: 8.33px;
+  border: none;
+  background: none;
 }
 
 .mobile__close {
