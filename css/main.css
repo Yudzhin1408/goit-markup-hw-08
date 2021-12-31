@@ -826,6 +826,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .social {
+    margin-bottom: 24px;
+  }
+}
+
 .social__item {
   width: 44px;
   height: 44px;
@@ -997,6 +1003,7 @@ body {
 
 .portfolio__item {
   margin: 15px;
+  max-width: 450px;
   transition: box-shadow var(--time) var(--cubic-bezier);
 }
 
