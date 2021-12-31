@@ -57,6 +57,11 @@
     color: var(--desc-text-color);
     margin-top: 10px;
   }
+  .social__item {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .card__image {
