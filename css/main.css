@@ -823,12 +823,11 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .social {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 }
 
@@ -860,6 +859,12 @@ body {
 
 .social__icon {
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .social__icon {
+    margin-bottom: 24px;
+  }
 }
 
 .client__title {
