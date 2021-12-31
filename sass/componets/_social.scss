@@ -3,6 +3,9 @@
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
   &__item {
     width: 44px;
     height: 44px;
