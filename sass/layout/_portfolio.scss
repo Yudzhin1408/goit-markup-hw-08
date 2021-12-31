@@ -11,6 +11,7 @@
 
   &__item {
     margin: 15px;
+    max-width: 450px;
     @media screen and (min-width: 768px) {
       max-width: 354px;
     }
