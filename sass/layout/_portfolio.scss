@@ -57,9 +57,9 @@
     transform: translateY(100%);
     transition: transform var(--time) var(--cubic-bezier);
     width: 450px;
-    // @media screen and (min-width: 768px) {
-    //   width: auto;
-    // }
+    @media screen and (min-width: 1280px) {
+      width: auto;
+    }
   }
 
   &__dorder {
